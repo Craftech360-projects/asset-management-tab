@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script> -->
+
+    <title>Assets Management Sign Up</title>
+  </head>
+
+  <body>
+    <!-- <div class="container">
+		<div class="col">
+			<div class="col">
+
+				<div id="player1Phase">
+					<span id="titleText" class="center">Player 1</span>
+					<div class="input-group p-3">
+						<input type="text" id="player1FirstName" class="form-control" placeholder="First Name"
+							aria-label="First Name">
+					</div>
+					<div class="input-group p-3">
+						<input type="text" id="player1Surname" class="form-control" placeholder="Surname"
+							aria-label="Surname">
+					</div>
+					<div class="input-group p-3">
+						<input type="email" id="player1Email" class="form-control" placeholder="Email Id"
+							aria-label="Email Id">
+					</div>
+					<div class="input-group p-3">
+						<input type="text" id="player1Country" class="form-control" placeholder="Country"
+							aria-label="Country">
+					</div>
+					<div class="form-check p-3" style="display: inline-block;">
+						<input type="checkbox" id="player1Communication" class="form-check-input">
+						<label class="form-check-label" for="player1Communication">Interested for Follow up
+							Communication</label>
+					</div>
+					<button type="button" class="btn btn-success" onclick="nextPlayer()">Next</button>
+				</div>
+
+			</div>
+			<div class="col">
+
+				<div id="player2Phase" style="display:block;">
+	
+					<span id="titleText">Player 2</span>
+					<div class="input-group p-3">
+						<input type="text" id="player2FirstName" class="form-control" placeholder="First Name"
+							aria-label="First Name">
+					</div>
+					<div class="input-group p-3">
+						<input type="text" id="player2Surname" class="form-control" placeholder="Surname"
+							aria-label="Surname">
+					</div>
+					<div class="input-group p-3">
+						<input type="email" id="player2Email" class="form-control" placeholder="Email Id"
+							aria-label="Email Id">
+					</div>
+					<div class="input-group p-3">
+						<input type="text" id="player2Country" class="form-control" placeholder="Country"
+							aria-label="Country">
+					</div>
+					<div class="form-check p-3">
+						<input type="checkbox" id="player1Communication">
+						<label class="form-check-label" for="player2Communication">Interested for Follow up
+							Communication</label>
+					</div>
+					<button type="button" class="btn btn-success" onclick="sendNames()">Submit</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+ -->
+
+ 	<!-- firstPage -->
+ 	<div class="firstPage">
+		<div class="btnContainer">
+			<button>New Game</button>
+		</div>
+	</div>
+
+    <!--  page 1-->
+    <div class="box1">
+      <div class="allContainer">
+        <div class="imageContainer">
+          <img src="/pageOne.png" alt="" />
+        </div>
+        <div class="btn-container">
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!--  page 2-->
+    <div class="box2">
+      <div class="allContainer">
+        <div class="FormContainer">
+          <div class="playerOneForm">
+            <div id="player1Phase">
+              <div class="playerNameContainer">
+                <span id="titleText">Player 1</span>
+              </div>
+              <div class="">
+                <input
+                  type="text"
+                  id="player1FirstName"
+                  class="form-control"
+                  placeholder="First Name"
+                  aria-label="First Name"
+                />
+              </div>
+              <div class="">
+                <input
+                  type="text"
+                  id="player1Surname"
+                  class="form-control"
+                  placeholder="Surname"
+                  aria-label="Surname"
+                />
+              </div>
+              <div class="">
+                <input
+                  type="email"
+                  id="player1Email"
+                  class="form-control"
+                  placeholder="Email Id"
+                  aria-label="Email Id"
+                />
+              </div>
+              <div class="">
+                <input
+                  type="text"
+                  id="player1Country"
+                  class="form-control"
+                  placeholder="Country"
+                  aria-label="Country"
+                />
+              </div>
+              <div class="checkboxContainer">
+                <input
+                  type="checkbox"
+                  id="player1Communication"
+                  class="form-check-input"
+                />
+                <label class="form-check-label" for="player1Communication"
+                  >You agree to receive an email afterwards on put cash to
+                  work collateral</label
+                >
+              </div>
+              <!-- <button
+                type="button"
+                class="btn btn-success"
+                onclick="nextPlayer()"
+              >
+                Next
+              </button> -->
+            </div>
+          </div>
+          <div class="playerTwoForm">
+            <div id="player2Phase" style="">
+              <div class="playerNameContainer">
+                <span id="titleText">Player 2</span>
+              </div>
+
+              <div class="">
+                <input
+                  type="text"
+                  id="player2FirstName"
+                  class="form-control"
+                  placeholder="First Name"
+                  aria-label="First Name"
+                />
+              </div>
+              <div class="">
+                <input
+                  type="text"
+                  id="player2Surname"
+                  class="form-control"
+                  placeholder="Surname"
+                  aria-label="Surname"
+                />
+              </div>
+              <div class="">
+                <input
+                  type="email"
+                  id="player2Email"
+                  class="form-control"
+                  placeholder="Email Id"
+                  aria-label="Email Id"
+                />
+              </div>
+              <div class="">
+                <input
+                  type="text"
+                  id="player2Country"
+                  class="form-control"
+                  placeholder="Country"
+                  aria-label="Country"
+                />
+              </div>
+              <div class="checkboxContainer">
+                <input type="checkbox" id="player1Communication" />
+                <label class="form-check-label" for="player2Communication"
+                  >You agree to receive an email afterwards on put cash to
+                  work collateral</label
+                >
+              </div>
+              <button
+                type="button"
+                class="btn btn-success"
+                onclick="sendNames()"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box3">
+      <div class="box3imageContainer">
+        <img src="/thirdPage.png" alt="" />
+      </div>
+      <div class="bottomBtnContainer">
+        <div class="playerNContainer">
+          <div class="bottomPlayerNames">
+            <p>PlayerOne</p>
+          </div>
+          <div class="bottomPlayerNames">
+            <p>PlayerOne</p>
+          </div>
+        </div>
+        <div class="bottomSubmitt">
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      // Establish a connection to the Socket.IO server
+      const socket = io();
+
+      let currentPlayer = 1; // To keep track of current player phase
+
+      function nextPlayer() {
+        // Hide current player phase and show the next player phase
+        const player1FirstName =
+          document.getElementById("player1FirstName").value;
+        const player1Surname = document.getElementById("player1Surname").value;
+        const player1Email = document.getElementById("player1Email").value;
+        const player1Country = document.getElementById("player1Country").value;
+
+        // Check if any field is empty for Player 1
+        if (
+          player1FirstName.trim() === "" ||
+          player1Surname.trim() === "" ||
+          player1Email.trim() === "" ||
+          player1Country.trim() === ""
+        ) {
+          displayErrorMessage("Please fill in all fields for Player 1.");
+          return;
+        }
+
+        // Prevent form reset
+        event.preventDefault();
+
+        if (currentPlayer === 1) {
+          document.getElementById("player1Phase").style.display = "none";
+          document.getElementById("player2Phase").style.display = "block";
+          document.getElementById("titleText").textContent = "Player 2 Details";
+          currentPlayer = 2;
+        }
+        socket.emit("restartGame", { gameRestart: true });
+      }
+
+      function sendNames() {
+        if (currentPlayer === 2) {
+          const player1FirstName =
+            document.getElementById("player1FirstName").value;
+          const player1Surname =
+            document.getElementById("player1Surname").value;
+          const player1Email = document.getElementById("player1Email").value;
+          const player1Country =
+            document.getElementById("player1Country").value;
+          //const player1Communication = document.getElementById('player1Communication').checked;
+          const player1CommunicationElement = document.getElementById(
+            "player1Communication"
+          );
+          const player1Communication = player1CommunicationElement
+            ? player1CommunicationElement.checked
+            : false;
+
+          const player2FirstName =
+            document.getElementById("player2FirstName").value;
+          const player2Surname =
+            document.getElementById("player2Surname").value;
+          const player2Email = document.getElementById("player2Email").value;
+          const player2Country =
+            document.getElementById("player2Country").value;
+          //const player2Communication = document.getElementById('player2Communication').checked;
+          const player2CommunicationElement = document.getElementById(
+            "player2Communication"
+          );
+          const player2Communication = player2CommunicationElement
+            ? player2CommunicationElement.checked
+            : false;
+
+          // Construct player objects for both players
+          const player1 = {
+            firstName: player1FirstName,
+            surname: player1Surname,
+            email: player1Email,
+            country: player1Country,
+            communication: player1Communication,
+          };
+
+          const player2 = {
+            firstName: player2FirstName,
+            surname: player2Surname,
+            email: player2Email,
+            country: player2Country,
+            communication: player2Communication,
+          };
+
+          // Emit players' details to the server
+          socket.emit("sendNames", { player1, player2, gameRestart: true });
+
+          // Clear previous error messages
+          errorContainer.innerHTML = "";
+
+          // Hide input phase and show game phase
+          document.getElementById("inputPhase").style.display = "none";
+          document.getElementById("gamePhase").style.display = "block";
+          document.getElementById("resetPhase").style.display = "none";
+          document.getElementById("headerText").textContent = "Start The Game";
+          document.getElementById("titleText").style.display = "none";
+        }
+      }
+      function displayErrorMessage(message) {
+        const errorContainer = document.getElementById("errorContainer");
+        const errorDiv = document.createElement("div");
+        errorDiv.classList.add("alert", "alert-danger");
+        errorDiv.textContent = message;
+        errorContainer.appendChild(errorDiv);
+      }
+
+      function startGame() {
+        // Send game start signal to the server
+        socket.emit("startGame", { gameStart: true });
+
+        // Hide game phase and show running phase
+        document.getElementById("gamePhase").style.display = "none";
+        document.getElementById("runningPhase").style.display = "block";
+        document.getElementById("headerText").textContent = "Please Wait";
+        document.getElementById("titleText").style.display = "none";
+      }
+      function resetData() {
+        // Send game start signal to the server
+        socket.emit("resetData", { gameStart: true });
+        document.getElementById("resetMessage").style.display = "block";
+        document.getElementById("resetPhase").style.display = "none";
+      }
+      socket.on("gameEnd", function (data) {
+        if (data.gameEnded) {
+          console.log("Game has ended, reloading page.");
+          window.location.reload(); // Reload the page
+        }
+      });
+    </script>
+  </body>
+</html>

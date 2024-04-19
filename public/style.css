@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/fonts/UNIVERSNEXTFORHSBC-MEDIUM.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-image: url("./bg.png");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+.box1 {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.imageContainer img {
+  width: 75%;
+  object-fit: cover;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 100px;
+  left: 45%;
+}
+
+.btn-container button {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 23px;
+}
+
+/* box2 */
+
+.box2{
+    display: none;
+}
+
+.FormContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 350px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  padding-left: 20px;
+  margin: 10px 0px;
+}
+
+.playerOneForm{
+    width: 450px;
+}
+
+.playerTwoForm{
+    width: 450px;
+}
+
+.checkboxContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    justify-content: center;
+    width: 355px;
+
+}
+
+.checkboxContainer label{
+    width: 400px;
+
+}
+.checkboxContainer input{
+    width: 20px;
+}
+
+#titleText{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.playerNameContainer{
+    margin-bottom: 40px;
+}
+
+#titleText span{ 
+ 
+    text-align: center;
+    
+}
+
+
+#player2Phase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#player1Phase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-success{
+    position: absolute;
+    bottom: 100px;
+    left: 44%;
+    width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 23px;
+}
+
+
+
+
+/* box3 */
+
+
+.box3{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+
+.box3imageContainer img{
+    width: 100%;
+}
+
+.bottomBtnContainer{
+    position: absolute;
+    bottom: 50px;
+    width: 100vw;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.playerNContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+
+.bottomSubmitt button{
+    width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 23px;
+}
+
+
+.playerNContainer .bottomPlayerNames{
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+
+
+
+.firstPage{
+    width: 100vw;
+    height: 100vh;
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.btnContainer button{
+    width: 260px;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    border: none;
+   
+}
